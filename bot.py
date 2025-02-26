@@ -47,7 +47,7 @@ auto_summary_enabled = defaultdict(lambda: True)
 START_TIME = time.time()
 
 # Lista de administradores del bot
-ADMIN_USER_IDS = [123456789]  # Reemplazar con IDs reales
+ADMIN_USER_IDS = [702356304]  # Reemplazar con IDs reales
 
 # Función para manejar el comando /start
 async def start(update: Update, context: CallbackContext):
