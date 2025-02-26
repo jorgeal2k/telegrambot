@@ -5,3 +5,22 @@ __pycache__/
 .venv/
 .idea/
 .vscode/
+
+# Archivos generados por el bot
+bot.log
+bot_data.json
+*.log
+
+# Archivos de distribución
+dist/
+build/
+*.egg-info/
+
+# Archivos de prueba y cobertura
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db

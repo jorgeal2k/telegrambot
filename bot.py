@@ -4,7 +4,6 @@ from collections import defaultdict
 from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackContext
-from openai import OpenAI
 import psutil
 import time
 import logging

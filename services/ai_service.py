@@ -14,8 +14,8 @@ class AIService:
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
-                    {"role": "system", "content": "Eres un asistente que resume conversaciones de grupos **en TELEGRAM**. Genera un resumen completo de la siguiente conversación de hasta 800 palabras, identificando los temas principales, participantes **clave** y conclusiones importantes. El resumen debe estar en español y ser fácil de leer. Debes usar un estilo informal. Debes usar un formato de lista ordenada. Haz uso de emoticonos y emojis típicos de un mensaje de Telegram."},
-                    {"role": "user", "content": f"Resume la siguiente conversación de las últimas 6 horas:\n\n{conversation_text}"}
+                    {"role": "system", "content": "Eres un asistente que resume conversaciones de grupos de Telegram. Genera un resumen completo de la siguiente conversación, identificando los temas principales y conclusiones importantes."},
+                    {"role": "user", "content": f"Resume la siguiente conversación:\n\n{conversation_text}"}
                 ],
                 max_tokens=self.max_tokens
             )
