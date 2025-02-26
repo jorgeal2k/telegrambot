@@ -1,3 +1,7 @@
-# Ignorar archivos relacionados con claves de una API
 .env
 __pycache__/
+*.py[cod]
+*.class
+.venv/
+.idea/
+.vscode/

@@ -191,7 +191,8 @@ def main():
     # Tarea 2: Generar resúmenes automáticos cada 6 horas
     job_queue.run_repeating(auto_summary, interval=21600, first=21600)
 
-    print("El bot está funcionando en Render...")
+    print("El bot está iniciando...")
+    # En Railway, utilizaremos polling ya que es más sencillo y funciona bien
     app.run_polling()
 
 if __name__ == "__main__":
