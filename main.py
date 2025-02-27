@@ -2,14 +2,6 @@ import os
 from dotenv import load_dotenv
 from bot import TelegramBot
 import logging
-import httpx
-
-# Deshabilitar el registro de httpx
-httpx_logger = logging.getLogger("httpx")
-httpx_logger.disabled = True
-
-# Configurar el nivel de registro global a WARNING
-logging.basicConfig(level=logging.WARNING)
 
 def main():
     # Cargar variables de entorno
