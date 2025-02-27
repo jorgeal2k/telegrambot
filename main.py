@@ -4,9 +4,9 @@ from bot import TelegramBot
 import logging
 import httpx
 
-# Configurar el nivel de registro de httpx a WARNING
+# Deshabilitar el registro de httpx
 httpx_logger = logging.getLogger("httpx")
-httpx_logger.setLevel(logging.WARNING)
+httpx_logger.disabled = True
 
 # Configurar el nivel de registro global a WARNING
 logging.basicConfig(level=logging.WARNING)
