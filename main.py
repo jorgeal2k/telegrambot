@@ -7,6 +7,9 @@ import httpx
 # Configurar el nivel de registro de httpx a WARNING
 logging.getLogger("httpx").setLevel(logging.WARNING)
 
+# Configurar el nivel de registro global a WARNING
+logging.basicConfig(level=logging.WARNING)
+
 def main():
     # Cargar variables de entorno
     load_dotenv()
