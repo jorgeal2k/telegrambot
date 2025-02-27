@@ -5,7 +5,8 @@ import logging
 import httpx
 
 # Configurar el nivel de registro de httpx a WARNING
-logging.getLogger("httpx").setLevel(logging.WARNING)
+httpx_logger = logging.getLogger("httpx")
+httpx_logger.setLevel(logging.WARNING)
 
 # Configurar el nivel de registro global a WARNING
 logging.basicConfig(level=logging.WARNING)
