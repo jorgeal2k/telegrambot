@@ -1,6 +1,11 @@
 import os
 from dotenv import load_dotenv
 from bot import TelegramBot
+import logging
+import httpx
+
+# Configurar el nivel de registro de httpx a WARNING
+logging.getLogger("httpx").setLevel(logging.WARNING)
 
 def main():
     # Cargar variables de entorno
